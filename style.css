@@ -171,11 +171,15 @@ ul.contact-list img{
     width: 52px;
 }
 
+ul.contact-list li:hover{
+    background-color: rgb(233, 235, 235);
+}
+
 ul.contact-list li{
     padding: 7px 0px;
     display: flex;
     background-color: white;
-    margin-left: 10px;
+    padding-left: 7px;
     justify-content: space-between;
     border-top: 1px rgb(246, 246, 246) solid;
 }
