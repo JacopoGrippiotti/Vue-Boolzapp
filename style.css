@@ -8,3 +8,19 @@ body{
     background: linear-gradient(to top ,rgb(219, 219, 211) 90%,rgb(30, 150, 136) 90%);
     height: 100vh;
 }
+
+
+
+/*colors*/
+
+.azure{
+    background-color: rgb(149, 218, 251);
+}
+
+.lightgray{
+    background-color: rgb(230, 230, 230);
+}
+
+.lightergray{
+    background-color: rgb(234, 234, 234)
+}
