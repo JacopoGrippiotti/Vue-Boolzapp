@@ -9,7 +9,21 @@ body{
     height: 100vh;
 }
 
+div.boolzapp-container{
+    width: 78%;
+    margin: 0 auto;
+    padding-top: 30px;
+    height: 92vh;
+    display: flex;
+}
 
+div.side-bar{
+    width: 35%;
+}
+
+div.message-side{
+    width: 65%;
+}
 
 /*colors*/
 
