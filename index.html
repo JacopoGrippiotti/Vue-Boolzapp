@@ -52,7 +52,14 @@
                 <div class="contact-list-container">
                     
                     <ul class="contact-list">
-                        <li></li>
+                        <li v-for="(person,index) in contacts">
+                            <img :src="person.avatar" alt="">
+                            <div class="contact-description">
+                                <span>{{person.name}}</span>
+                                <span class="font-small color-gray">ultimo messaggio inviato</span>
+                            </div>
+                             <span class="hour-span">12:12</span>
+                        </li>
                     </ul>
                 
                 </div>
