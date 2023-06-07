@@ -176,7 +176,7 @@ ul.contact-list li:hover{
 }
 
 ul.contact-list li{
-    padding: 7px 0px;
+    padding: 10px 0px;
     display: flex;
     background-color: white;
     padding-left: 7px;
