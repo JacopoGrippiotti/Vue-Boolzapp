@@ -9,7 +9,28 @@ body{
     height: 100vh;
 }
 /*UTILITIES*/
+.font-small{
+    font-size: 0.88rem;
+}
 
+.link-color{
+    color: rgb(89, 119, 134);
+}
+.font-smaller{
+    font-size: 0.80rem;
+}
+.flex{
+    display: flex;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.margin-auto{
+    margin: auto;
+}
 
 div.boolzapp-container{
     width: 78%;
@@ -40,8 +61,24 @@ span.options{
 }
 
 div.notify{
-    padding-bottom: 10px;
-    padding-top: 10px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+    display: flex;
+}
+
+div.notify div.flex-column{
+    margin-top: 4px;
+}
+
+div.notify div.flex-column span{
+    margin-left: 8px;
+}
+
+div.notify div.flex-column span a:hover{
+    color: rgb(0, 255, 60);
+}
+div.notify div.flex-column span:hover{
+    cursor: pointer;
 }
 
 div.notify i{
@@ -50,12 +87,12 @@ div.notify i{
     color: rgb(149, 218, 251);
 }
 
-div.notify>div{
+div.notify>div.flex{
     border-radius: 50%;
     background-color: white;
-    height: 38px;
-    width: 38px;
-    margin-left: 10px;
+    height: 42px;
+    width: 42px;
+    margin-left: 13px;
     display: flex;
 }
 
@@ -64,6 +101,30 @@ div.side-bar{
     padding-top: 0;
 }
 
+div.input-container span{
+    width: 20%;
+    background-color: white;
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+div.input-container i{
+    color: rgb(191, 189, 189);
+    font-size: 1rem;
+}
+
+div.side-bar input{
+    padding: 8px 0;
+    margin-top: 4px;
+    margin-left: 1px;
+    margin-right: 4px;
+    border: 0px;
+    width: 78%;
+}
+div.side-bar i:hover{
+    color: rgb(0, 255, 60);
+    cursor: pointer;
+}
 div.owner-profile{
     padding-bottom: 10px;
     padding-top: 10px;
