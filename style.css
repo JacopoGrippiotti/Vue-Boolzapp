@@ -135,6 +135,7 @@ div.side-bar i:hover{
 div.owner-profile{
     padding-bottom: 10px;
     padding-top: 10px;
+    border-right: 2px rgb(224, 224, 224) solid ;
 }
 
 
@@ -146,6 +147,22 @@ div.side-bar img{
     vertical-align: middle;
 }
 
+div.message-side img{
+    width: 42px;
+    height: 42px;
+    margin-left: 7px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+div.message-side span.options{
+    width: 13%;
+}
+
+div.message-side span.options i:hover{
+    color: rgb(0, 255, 60);
+    cursor: pointer;
+}
 div.message-side{
     width: 65%;
 }
@@ -202,6 +219,11 @@ div.contact-list-container{
     margin-right: 5px;
     font-size: 0.8rem;
     color:rgb(160, 166, 168);
+}
+
+div.messages-container{
+    background-color: aquamarine;
+    height: calc(97vh - 162px);
 }
 /*colors*/
 
