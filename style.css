@@ -221,10 +221,56 @@ div.contact-list-container{
     color:rgb(160, 166, 168);
 }
 
-div.messages-container{
+div.messages-wrapper{
     background-color: aquamarine;
-    height: calc(97vh - 162px);
+    height: calc(97vh - 160px);
+    background-image: url("./img/mine.jpg");
+    display: flex;
+    flex-direction: column;
 }
+
+
+div.messages-control-bar{
+    height: 68px;
+    background-color: rgb(243, 238, 234);
+    display: flex;
+}
+
+div.messages-control-bar input{
+    width: 80%;
+    border: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+div.control-left,
+div.control-right{
+    width: 10%;
+    display: flex;
+}
+
+div.control-left i,
+div.control-right i{
+    font-size: 1.2rem;
+    color: rgb(111, 111, 111);
+}
+
+.sent{
+    background-color: green;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+.received{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    align-self: flex-start;
+}
+
+
 /*colors*/
 
 .azure{
