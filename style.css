@@ -8,6 +8,8 @@ body{
     background: linear-gradient(to top ,rgb(219, 219, 211) 86%,rgb(30, 150, 136) 86%);
     height: 100vh;
 }
+/*UTILITIES*/
+
 
 div.boolzapp-container{
     width: 78%;
@@ -21,6 +23,42 @@ span.profile-image span{
     margin-left: 5px;
 }
 
+span.profile-image{
+    width: 40%;
+}
+
+span.options{
+    display: flex;
+    width: 30%;
+    justify-content: space-evenly;
+}
+
+.options i{
+    margin: 0 4px;
+    color: rgb(176, 176, 176);
+    font-size: 1.2rem;
+}
+
+div.notify{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+div.notify i{
+    font-size: 1rem;
+    margin: auto;
+    color: rgb(149, 218, 251);
+}
+
+div.notify>div{
+    border-radius: 50%;
+    background-color: white;
+    height: 38px;
+    width: 38px;
+    margin-left: 10px;
+    display: flex;
+}
+
 div.side-bar{
     width: 35%;
     padding-top: 0;
@@ -32,8 +70,8 @@ div.owner-profile{
 }
 
 div.side-bar img{
-    width: 45px;
-    height: 45px;
+    width: 42px;
+    height: 42px;
     margin-left: 7px;
     border-radius: 50%;
     vertical-align: middle;
