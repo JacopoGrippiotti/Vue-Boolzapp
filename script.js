@@ -166,10 +166,28 @@ createApp({
                     ],
                 }
             ],
-            activeContact: 0
+            activeContact: 0,
+            newMessage: '',
+            reply: {message: 'OK!!',
+                    status: 'received'
+                   }
         }
     },
     methods: {
+        addNewMessage(newMessage){
+            if(newMessage === ''){
+
+                return false
+
+            }
+            this.newMessage = {message: newMessage,
+                               status: 'sent'}
+
+            this.contacts[this.activeContact].messages.push(this.newMessage)
+            let reply = this.contacts[this.activeContact].messages.push(this.reply)
+            
+            this.newMessage = ''     
+    },
         
     } 
 }).mount('#app')

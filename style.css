@@ -107,6 +107,7 @@ div.notify>div.flex{
 div.side-bar{
     width: 35%;
     padding-top: 0;
+    overflow-y: hidden;
 }
 
 div.input-container span{
@@ -182,7 +183,6 @@ div.owner-contact{
 
 ul {
     list-style: none;
-    overflow-y: scroll;
 }
 
 ul.contact-list img{
@@ -214,6 +214,7 @@ div.contact-list-container{
     margin-top: 4px;
     background-color: white;
     height: calc(97vh - 202px);
+    overflow-y: scroll;
 }
 
 .hour-span{
@@ -228,6 +229,7 @@ div.messages-wrapper{
     background-image: url("./img/mine.jpg");
     display: flex;
     flex-direction: column;
+    overflow-y: scroll;
 }
 
 
