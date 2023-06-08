@@ -86,7 +86,7 @@
                 </div>
 
                 <div class="messages-wrapper">
-                        <div v-for="(contact , index) in contacts">{{contact.messages.message}}</div>
+                        <div v-for="(contact , index) in contacts">{{contact.messages[index].message}}</div>
                 </div>
 
                 <div class="messages-control-bar">
