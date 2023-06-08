@@ -165,12 +165,11 @@ createApp({
                         }
                     ],
                 }
-            ]
-            
+            ],
+            activeContact: 0
         }
     },
-    methods:{
+    methods: {
         
-        }
-    
+    } 
 }).mount('#app')

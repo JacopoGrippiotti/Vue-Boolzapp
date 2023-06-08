@@ -280,6 +280,10 @@ div.control-right i{
 .person-name{
     font-weight: 600;
 }
+
+div.active{
+    background-color: rgb(233, 235, 235);
+}
 /*colors*/
 
 .azure{

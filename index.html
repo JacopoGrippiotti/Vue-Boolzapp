@@ -55,7 +55,7 @@
                 <div class="contact-list-container">
                     
                     <ul class="contact-list">
-                        <li v-for="(person,index) in contacts">
+                        <li v-for="(person,index) in contacts" @click="activeContact = index"   :class="{ active : isActive }" >
                             <img :src="person.avatar" alt="">
                             <div class="contact-description">
                                 <span class="person-name">{{person.name}}</span>
@@ -84,9 +84,9 @@
                     </div>
                 
                 </div>
-
+                
                 <div class="messages-wrapper">
-                        <div v-for="(contact , index) in contacts">{{contact.messages[index].message}}</div>
+                    <div v-for="(message) in contacts[activeContact].messages" :class="message.status == 'sent' ? 'sent': 'received' ">{{message.message}}</div>
                 </div>
 
                 <div class="messages-control-bar">
@@ -98,7 +98,7 @@
                         <i class="fa-solid fa-microphone margin-auto "></i>
                     </div>
                 </div>
-
+                
 
             </div>
         </div>
