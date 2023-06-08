@@ -281,7 +281,7 @@ div.control-right i{
     font-weight: 600;
 }
 
-div.active{
+ul.contact-list li.active{
     background-color: rgb(233, 235, 235);
 }
 /*colors*/

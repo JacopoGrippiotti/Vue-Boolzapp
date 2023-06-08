@@ -55,7 +55,7 @@
                 <div class="contact-list-container">
                     
                     <ul class="contact-list">
-                        <li v-for="(person,index) in contacts" @click="activeContact = index"   :class="{ active : isActive }" >
+                        <li v-for="(person,index) in contacts" @click="activeContact = index"   :class="(index == activeContact) ? 'active' : '' " >
                             <img :src="person.avatar" alt="">
                             <div class="contact-description">
                                 <span class="person-name">{{person.name}}</span>
