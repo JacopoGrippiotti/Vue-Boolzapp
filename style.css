@@ -182,6 +182,7 @@ div.owner-contact{
 
 ul {
     list-style: none;
+    overflow-y: scroll;
 }
 
 ul.contact-list img{
@@ -213,7 +214,6 @@ div.contact-list-container{
     margin-top: 4px;
     background-color: white;
     height: calc(97vh - 202px);
-    overflow-y: scroll;
 }
 
 .hour-span{
