@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,300;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
  </head>
@@ -19,7 +22,7 @@
                     <div class="owner-profile lightgray">
                         <span class="profile-image">
                             <img src="img/avatar_7.jpg" alt="">
-                            <span>Jacopo</span>
+                            <span class="person-name">Jacopo</span>
                         </span>
                         <span class="options">
                             <i class="fa-solid fa-circle-notch"></i>
@@ -34,7 +37,7 @@
                         </div>
                         
                         <div class="flex-column">
-                            <span class="font-small">Ricevi notifiche di nuovi messagi</span>
+                            <span class="font-small">Ricevi notifiche di nuovi messaggi</span>
                             <span><a href="" class="font-smaller link-color">Attiva notifiche desktop</a></span>
                         </div> 
                     </div>
@@ -55,7 +58,7 @@
                         <li v-for="(person,index) in contacts">
                             <img :src="person.avatar" alt="">
                             <div class="contact-description">
-                                <span>{{person.name}}</span>
+                                <span class="person-name">{{person.name}}</span>
                                 <span class="font-small color-gray">ultimo messaggio inviato</span>
                             </div>
                              <span class="hour-span">12:12</span>
@@ -71,7 +74,7 @@
                     <div class="owner-profile lightgray">
                         <span class="profile-image">
                             <img src="img/avatar_1.jpg" alt="">
-                            <span>Jacopo</span>
+                            <span class="person-name">Michele</span>
                         </span>
                         <span class="options">
                             <i class="fa-solid fa-magnifying-glass margin-auto "></i>
@@ -83,11 +86,7 @@
                 </div>
 
                 <div class="messages-wrapper">
-
-                        
-                        <div class="sent">hai portato a spasso il cane?</div>
-                        <div class="sent">ricordati di stendere i panni</div>
-                        <div class="received">tutto fatto!</div>
+                        <div v-for="(contact , index) in contacts">{{contact.messages.message}}</div>
                 </div>
 
                 <div class="messages-control-bar">

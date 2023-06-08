@@ -7,6 +7,7 @@
 body{
     background: linear-gradient(to top ,rgb(219, 219, 211) 86%,rgb(30, 150, 136) 86%);
     height: 100vh;
+    font-family: 'Lato', sans-serif;
 }
 /*UTILITIES*/
 .font-small{
@@ -257,20 +258,28 @@ div.control-right i{
 }
 
 .sent{
-    background-color: green;
-    padding: 20px;
-    border-radius: 20px;
+    background-color: rgb(213, 250, 187);
+    padding: 15px;
+    border-radius: 15px;
     align-self: flex-end;
+    margin-right: 120px;
+    margin-top: 10px;
+    font-size: 0.95rem;
 }
 
 .received{
     background-color: white;
-    padding: 20px;
-    border-radius: 20px;
+    padding: 15px;
+    border-radius: 15px;
     align-self: flex-start;
+    margin-left: 120px;
+    margin-top: 10px;
+    font-size: 0.95rem;
 }
 
-
+.person-name{
+    font-weight: 600;
+}
 /*colors*/
 
 .azure{
