@@ -47,7 +47,7 @@
                             <i class="fa-solid fa-magnifying-glass margin-auto "></i>
                         </span>
                         
-                        <input type="text" class="contacts-input" placeholder="Cerca o inizia una nuova chat"></input>
+                        <input type="text" class="contacts-input" v-model="search" placeholder="Cerca o inizia una nuova chat"></input>
                     </div>
                     
                 </div>
@@ -55,7 +55,7 @@
                 <div class="contact-list-container">
                     
                     <ul class="contact-list">
-                        <li v-for="(person,index) in contacts" @click="activeContact = index"   :class="(index == activeContact) ? 'active' : '' " >
+                        <li v-for="(person,index) in filteredResult" @click="activeContact = index"   :class="(index == activeContact) ? 'active' : '' " >
                             <img :src="person.avatar" alt="">
                             <div class="contact-description">
                                 <span class="person-name">{{person.name}}</span>

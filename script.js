@@ -170,7 +170,8 @@ createApp({
             newMessage: '',
             reply: {message: 'OK!!',
                     status: 'received'
-                   }
+                   },
+            search: ''
         }
     },
     methods: {
@@ -192,7 +193,14 @@ createApp({
         giveReply(){
             this.contacts[this.activeContact].messages.push(this.reply)
         }
-    } 
+    },
+    computed: {
+        filteredResult(){
+           return this.contacts.filter(contact =>{
+           return contact.name.toLowerCase().indexOf(this.search.toLowerCase()) != -1;
+           }) 
+        }
+    }
 }).mount('#app')
 
 
