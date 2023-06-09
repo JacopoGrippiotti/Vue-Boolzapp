@@ -186,8 +186,12 @@ createApp({
             this.contacts[this.activeContact].messages.push(this.newMessage)
             let reply = this.contacts[this.activeContact].messages.push(this.reply)
             
+            
             this.newMessage = ''     
     },
         
     } 
 }).mount('#app')
+
+
+
