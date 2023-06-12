@@ -73,8 +73,8 @@
                     
                     <div class="owner-profile lightgray">
                         <span class="profile-image">
-                            <img :src="contacts[activeContact].avatar" alt="">
-                            <span class="person-name">{{contacts[activeContact].name}}</span>
+                            <img :src="filteredResult[activeContact].avatar" alt="">
+                            <span class="person-name">{{filteredResult[activeContact].name}}</span>
                         </span>
                         <span class="options">
                             <i class="fa-solid fa-magnifying-glass margin-auto "></i>
@@ -86,7 +86,7 @@
                 </div>
                 
                 <div class="messages-wrapper">
-                    <div v-for="(message) in contacts[activeContact].messages" :class="message.status == 'sent' ? 'sent': 'received' ">{{message.message}}</div>
+                    <div v-for="(message) in filteredResult[activeContact].messages" :class="message.status == 'sent' ? 'sent': 'received' ">{{message.message}}</div>
                 </div>
 
                 <div class="messages-control-bar">

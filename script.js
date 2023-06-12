@@ -198,7 +198,7 @@ createApp({
         filteredResult(){
            return this.contacts.filter(contact =>{
            return contact.name.toLowerCase().indexOf(this.search.toLowerCase()) != -1;
-           })
+           }) 
         }
     }
 }).mount('#app')
